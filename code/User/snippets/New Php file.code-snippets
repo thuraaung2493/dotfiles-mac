@@ -1,0 +1,18 @@
+{
+  "new php file": {
+    "prefix": "ph",
+    "body": [
+      "<?php ",
+      "",
+      "declare(strict_types=1);",
+      "",
+      "namespace ${1:namespace}",
+      "",
+      "${2:final readonly class} ${3:className}",
+      "{",
+      "    ${4://body}",
+      "}"
+    ],
+    "description": "new php file"
+  }
+}

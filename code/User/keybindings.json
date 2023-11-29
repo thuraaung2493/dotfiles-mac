@@ -1,0 +1,154 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "alt+d",
+    "command": "workbench.view.debug"
+  },
+  {
+    "key": "cmd+alt+a",
+    "command": "namespaceResolver.importAll",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+shift+i",
+    "command": "namespaceResolver.import",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+shift+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+shift+k",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+d",
+    "command": "editor.action.addSelectionToNextFindMatch"
+  },
+  {
+    "key": "cmd+shift+w",
+    "command": "workbench.files.action.collapseExplorerFolders"
+  },
+  /**
+   * Activity Bar
+   **/
+  {
+    "key": "cmd+k cmd+e",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "cmd+k cmd+v",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "cmd+k cmd+d",
+    "command": "workbench.view.debug"
+  },
+  {
+    "key": "cmd+k cmd+x",
+    "command": "workbench.views.extensions.installed.focus"
+  },
+
+  /**
+   * Git
+   **/
+  {
+    "command": "git.commit",
+    "when": "activeViewlet == 'workbench.view.scm'",
+    "key": "cmd+enter"
+  },
+
+  /**
+   * Split screen
+   **/
+  {
+    "key": "cmd+k cmd+s",
+    "command": "workbench.action.splitEditor"
+  },
+
+  /**
+   * Terminal
+   **/
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "cmd+ctrl+t",
+    "command": "workbench.action.terminal.new",
+    "when": "terminal.active"
+  },
+  {
+    "key": "cmd+ctrl+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+
+  /**
+   * File Explorer
+   **/
+  {
+    "key": "cmd+d",
+    "command": "duplicate.execute",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+cmd+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.files.action.refreshFilesExplorer",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "cmd+k cmd+k",
+    "command": "workbench.action.toggleZenMode"
+  },
+  {
+    "key": "alt+t alt+c",
+    "command": "workbench.view.extension.thunder-client"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "-workbench.view.extension.thunder-client"
+  },
+  {
+    "key": "alt+k alt+r",
+    "command": "better-phpunit.run",
+    "when": "editorLangId == 'php'"
+  },
+  {
+    "key": "cmd+k cmd+r",
+    "command": "-better-phpunit.run",
+    "when": "editorLangId == 'php'"
+  },
+  {
+    "key": "alt+k alt+f",
+    "command": "better-phpunit.run-file",
+    "when": "editorLangId == 'php'"
+  },
+  {
+    "key": "cmd+k cmd+f",
+    "command": "-better-phpunit.run-file",
+    "when": "editorLangId == 'php'"
+  },
+  {
+    "key": "ctrl+cmd+i",
+    "command": "intelephense.index.workspace"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "Declare strict types": {
+    "prefix": "dec",
+    "body": ["declare(strict_types=1);"],
+    "description": "Declare strict types"
+  }
+}
